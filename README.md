@@ -19,6 +19,20 @@ You will need [`uv`](https://docs.astral.sh/uv/) installed.
 - Access to a Databricks cluster
 - Access to model data storage
 
+## Set up Databricks authentication
+
+Open up a browser tab and log into the Databricks website.
+Copy the databricks domain name to your clipboard (remove anything in the URL
+after the domain suffix (.com/.net)).
+
+Run
+
+```powershell
+databricks auth login
+```
+
+Select option 2 ("enter a host URL manually"), and then paste the domain name.
+
 ## Optional: pin to a specific Python version
 
 `uv` will install the version if not already available.
